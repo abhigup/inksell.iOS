@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CA8468EE969125E166B401E /* Pods_inksell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2821B0D41622CB1DE5C63D /* Pods_inksell.framework */; };
 		AD22EF701D925F0B00550612 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22EF6F1D925F0B00550612 /* AppDelegate.swift */; };
 		AD22EF721D925F0B00550612 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22EF711D925F0B00550612 /* ViewController.swift */; };
 		AD22EF751D925F0B00550612 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD22EF731D925F0B00550612 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A2CE9ADA691A77386C029372 /* Pods-inksell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inksell.release.xcconfig"; path = "Pods/Target Support Files/Pods-inksell/Pods-inksell.release.xcconfig"; sourceTree = "<group>"; };
 		AD22EF6C1D925F0B00550612 /* inksell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inksell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD22EF6F1D925F0B00550612 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD22EF711D925F0B00550612 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		AD22EF761D925F0B00550612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD22EF791D925F0B00550612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD22EF7B1D925F0B00550612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D6C90270727B9A6724C9E3 /* Pods-inksell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inksell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-inksell/Pods-inksell.debug.xcconfig"; sourceTree = "<group>"; };
+		FC2821B0D41622CB1DE5C63D /* Pods_inksell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inksell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA8468EE969125E166B401E /* Pods_inksell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				AD22EF6E1D925F0B00550612 /* inksell */,
 				AD22EF6D1D925F0B00550612 /* Products */,
+				C6CD19BDAE5353D2C09DFFE8 /* Pods */,
+				F2356ECC4E03C706C51F5977 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = inksell;
 			sourceTree = "<group>";
 		};
+		C6CD19BDAE5353D2C09DFFE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2D6C90270727B9A6724C9E3 /* Pods-inksell.debug.xcconfig */,
+				A2CE9ADA691A77386C029372 /* Pods-inksell.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2356ECC4E03C706C51F5977 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC2821B0D41622CB1DE5C63D /* Pods_inksell.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD22EF7E1D925F0B00550612 /* Build configuration list for PBXNativeTarget "inksell" */;
 			buildPhases = (
+				FDDA04505C0104439DE6282E /* [CP] Check Pods Manifest.lock */,
 				AD22EF681D925F0B00550612 /* Sources */,
 				AD22EF691D925F0B00550612 /* Frameworks */,
 				AD22EF6A1D925F0B00550612 /* Resources */,
+				8DB9CE56962C3472DDCE62BF /* [CP] Embed Pods Frameworks */,
+				0A3A792CF9A4A11C1C29FF7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A3A792CF9A4A11C1C29FF7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-inksell/Pods-inksell-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DB9CE56962C3472DDCE62BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-inksell/Pods-inksell-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDDA04505C0104439DE6282E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD22EF681D925F0B00550612 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		AD22EF7F1D925F0B00550612 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2D6C90270727B9A6724C9E3 /* Pods-inksell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GBJY6T82UL;
@@ -270,6 +346,7 @@
 		};
 		AD22EF801D925F0B00550612 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2CE9ADA691A77386C029372 /* Pods-inksell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GBJY6T82UL;
@@ -300,6 +377,7 @@
 				AD22EF801D925F0B00550612 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
